@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'roboto-light';
+    src: "./dist/css/Roboto-Light.ttf";
+}
+@font-face{
+    font-family: 'roboto';
+    src: './dist/css/Roboto-Regular.ttf';
+}
+.media-body.white {
+    color: white;
+    font-family: 'roboto-light';
+    font-size: 15px;
+}
+
+.robl {
+    padding-left:5%;
+    font-family: 'roboto-light';
+}
+
+.robr {
+    padding-left:5%;
+    font-family: 'roboto';
+}
+
+.head-main {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: center;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+.head-main {
+    font-size: 120px !important;
+    font-weight: 900!important;
+    color: #585858!important;
+    padding: 100px 20px 20px 20px;
+}
+html, body{
+    height:100%;
+}
+#info-container{
+    position:relative;
+    padding-bottom:20px;
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:auto;
+    margin-right:auto;
+    background:#6F90A2;
+    min-width:1000px;
+    max-width:1000px;
+    clear: both;
+    height:auto;
+    overflow:auto;
+}
