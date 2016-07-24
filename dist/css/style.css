@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'AvenirLTStd-Light';
+    font-family: 'avenir-light';
     src: "./dist/css/AvenirLTStd-Light";
 }
 @font-face{
-    font-family: 'AvenirLTStd';
+    font-family: 'avenir';
     src: './dist/css/AvenirLTStd-Light';
 }
 .media-body.white {
     color: white;
-    font-family: 'AvenirLTStd-Light';
+    font-family: 'avenir-light';
     font-size: 15px;
 }
 
 .robl {
     padding-left:5%;
-    font-family: 'AvenirLTStd-Light';
+    font-family: 'avenir-light';
 }
 
 .robr {
     padding-left:5%;
-    font-family: 'AvenirLTStd';
+    font-family: 'avenir';
 }
 
 .head-main {
