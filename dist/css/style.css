@@ -1,25 +1,25 @@
 @font-face {
-    font-family: 'roboto-light';
-    src: "./dist/css/Roboto-Light.ttf";
+    font-family: 'AvenirLTStd-Light';
+    src: "./dist/css/AvenirLTStd-Light";
 }
 @font-face{
-    font-family: 'roboto';
-    src: './dist/css/Roboto-Regular.ttf';
+    font-family: 'AvenirLTStd';
+    src: './dist/css/AvenirLTStd-Light';
 }
 .media-body.white {
     color: white;
-    font-family: 'roboto-light';
+    font-family: 'AvenirLTStd-Light';
     font-size: 15px;
 }
 
 .robl {
     padding-left:5%;
-    font-family: 'roboto-light';
+    font-family: 'AvenirLTStd-Light';
 }
 
 .robr {
     padding-left:5%;
-    font-family: 'roboto';
+    font-family: 'AvenirLTStd';
 }
 
 .head-main {
