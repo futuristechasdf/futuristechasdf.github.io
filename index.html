@@ -42,7 +42,7 @@ window.onload = function() {
        //between the <a ...> </a> tags with the value of splitText
        if(Boolean(mobile) == true) {//true) {
    			document.getElementById("myLink").innerHTML=null;
-   			document.getElementById("navDT").setAttribute("style","");
+   			document.getElementById("myLink").removeChild(document.getElementById("myLink").firstChild);
        }
        else {
    			document.getElementById("myLink2").innerHTML=null;
@@ -56,7 +56,6 @@ window.onload = function() {
   <!-- Single button -->
 
 <div class="navbar" style="padding:1px" id = "myLink">
-  <img height = "50" style="display: inline-block; padding-left: 5px; padding-top: 1px; padding-bottom: 5px" src="./dist/img/TEDx.png">
   <ul id="navDT" class="nav-justified", textalign="center" text-color="#ffffff"  style="width width: 25%; float: right; display: inline-block; padding-top: 10px">
    <li><a href="index.html"><font color="black" size = "5">Home</font></a></li>
     <li><a href="Team.html"><font color="black" size = "5">Team</font></a></li>
@@ -67,6 +66,7 @@ window.onload = function() {
   <hr style="border: 1px solid #f00">
 </div>
 
+<img height = "50" style="display: inline-block; padding-left: 5px; padding-top: 1px; padding-bottom: 5px" src="./dist/img/TEDx.png">
 <div class="btn-group" id = "myLink2" style="padding:4px">
   <img height = "50" style = "display: inline-block; padding-left: 5px; padding-top: 5px; padding-bottom: 5px" src="./dist/img/TEDx.png">
 
