@@ -31,16 +31,16 @@ var simpleText = "hello_world";
 var finalSplitText = simpleText.split("_");
 var splitText = finalSplitText[0];
 var mobile = false;
-
-
-window.onload = function() {
-	var width = screen.width;
+var width = screen.width;
 	if(width < 720) {
 		mobile = true;
 	}
+
+window.onload = function() {
+	
        //when the document is finished loading, replace everything
        //between the <a ...> </a> tags with the value of splitText
-       if(mobile = true) {
+       if(Boolean(mobile) = true) {
    			document.getElementById("myLink").innerHTML=mobile.toString();
        }
        else {
@@ -77,6 +77,7 @@ window.onload = function() {
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
+<a id="myLink" href = test.html></a>
 
 
 
