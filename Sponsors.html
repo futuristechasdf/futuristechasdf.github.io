@@ -25,11 +25,37 @@
   <script type="text/javascript" src="./dist/js/index.js"></script>
 </head>
 
+<script>
+var simpleText = "hello_world";
+var finalSplitText = simpleText.split("_");
+var splitText = finalSplitText[0];
+var mobile = false;
+var width = screen.width;
+  if(width < 720) {
+    mobile = true;
+  }
+
+window.onload = function() {
+  
+       //when the document is finished loading, replace everything
+       //between the <a ...> </a> tags with the value of splitText
+       if(Boolean(mobile) == true) {//true) {
+         document.getElementById("myLink").innerHTML=null;
+        // document.getElementById("myLink").removeChild(document.getElementById("myLink").firstChild);
+        // document.getElementById("myLink").removeChild(document.getElementById("myLink").firstChild);
+       }
+       else {
+        document.getElementById("myLink2").innerHTML=null;
+       }
+}
+</script>
+
+
 <body>
 
-<div class="navbar">
-  <img height = "50" style = "display: inline-block; padding-left: 5px; padding-top: 5px; padding-bottom: 5px" src="./dist/img/TEDx.png">
-  <ul class="nav-justified", textalign="center" text-color="#ffffff"  style = "width: 50%; float: right; display: inline-block; padding-top: 10px">
+<div class="navbar" style="padding:1px" id = "myLink">
+  <img height = "50" style="display: inline-block; padding-left: 5px; padding-top: 1px; padding-bottom: 5px" src="./dist/img/TEDx.png">
+  <ul id="navDT" class="nav-justified", textalign="center" text-color="#ffffff"  style="width width: 25%; float: right; display: inline-block; padding-top: 10px">
    <li><a href="index.html"><font color="black" size = "5">Home</font></a></li>
     <li><a href="Team.html"><font color="black" size = "5">Team</font></a></li>
     <li><a href="Sponsors.html"><font color="black" size = "5">Sponsors</font></a></li>
@@ -37,6 +63,21 @@
     <li><a href="Contact.html"><font color="black" size = "5">Contact</font></a></li>
   </ul>
   <hr style="border: 1px solid #f00">
+</div>
+
+<div class="btn-group" id = "myLink2" style="padding:4px">
+  <img height = "50" style="display: inline-block; padding-left: 5px; padding-top: 1px; padding-bottom: 5px" src="./dist/img/TEDx.png">
+
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Team.html">Team</a></li>
+    <li><a href="Sponsors.html">Sponsors</a></li>
+    <li><a href="Media.html">Media</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+  </ul>
 </div>
 
 
